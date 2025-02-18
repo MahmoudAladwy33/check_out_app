@@ -1,3 +1,4 @@
+import 'package:check_out_app/core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class MyCartView extends StatelessWidget {
@@ -5,6 +6,15 @@ class MyCartView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text(
+            'My Cart',
+            style: TextStyles.style25,
+          ),
+        ),
+      ),
+    );
   }
 }
